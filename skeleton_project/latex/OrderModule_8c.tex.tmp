@@ -1,0 +1,70 @@
+\hypertarget{OrderModule_8c}{}\doxysection{source/\+Order\+Module.c File Reference}
+\label{OrderModule_8c}\index{source/OrderModule.c@{source/OrderModule.c}}
+
+
+En ordre modul. Tar inn forskjellige parametre fra bruker; etasjen ordren kommer fra, ønsket destinasjon og skiller mellom innenfra. utenfra. opp og ned. Basert på disse lages en generell ordre som kan plasseres i køsystemet. ~\newline
+  
+
+
+{\ttfamily \#include \char`\"{}Order\+Module.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdlib.\+h$>$}\newline
+{\ttfamily \#include $<$time.\+h$>$}\newline
+Include dependency graph for Order\+Module.\+c\+:
+% FIG 0
+\doxysubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structOrder}{Order}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{OrderModule_8c_a0592dba56693fad79136250c11e5a7fe}\label{OrderModule_8c_a0592dba56693fad79136250c11e5a7fe}} 
+\#define {\bfseries M\+A\+X\+\_\+\+S\+I\+ZE}~20
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{OrderModule_8c_a0e9117de7e6a340559202f88a1dbd9c6}\label{OrderModule_8c_a0e9117de7e6a340559202f88a1dbd9c6}} 
+enum {\bfseries src} \{ {\bfseries C\+AB} = 0, 
+{\bfseries F\+L\+O\+OR}
+ \}
+\item 
+\mbox{\Hypertarget{OrderModule_8c_a6db42ca383d09a1950c08551c0851e25}\label{OrderModule_8c_a6db42ca383d09a1950c08551c0851e25}} 
+enum {\bfseries desired\+\_\+direction} \{ {\bfseries D\+O\+WN} = -\/1, 
+{\bfseries S\+T\+AY} = 0, 
+{\bfseries UP}
+ \}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structOrder}{Order}} \mbox{\hyperlink{OrderModule_8c_a5d8e28ba4a955ab230178ae73861506a}{ta\+Imot}} (void)
+\begin{DoxyCompactList}\small\item\em Registrer knappetrykk og oppretter tilvsvarende {\ttfamily O\+R\+D\+ER} structs som brukes til køsystem senere. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+En ordre modul. Tar inn forskjellige parametre fra bruker; etasjen ordren kommer fra, ønsket destinasjon og skiller mellom innenfra. utenfra. opp og ned. Basert på disse lages en generell ordre som kan plasseres i køsystemet. ~\newline
+ 
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{OrderModule_8c_a5d8e28ba4a955ab230178ae73861506a}\label{OrderModule_8c_a5d8e28ba4a955ab230178ae73861506a}} 
+\index{OrderModule.c@{OrderModule.c}!taImot@{taImot}}
+\index{taImot@{taImot}!OrderModule.c@{OrderModule.c}}
+\doxysubsubsection{\texorpdfstring{taImot()}{taImot()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structOrder}{Order}} ta\+Imot (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+
+
+Registrer knappetrykk og oppretter tilvsvarende {\ttfamily O\+R\+D\+ER} structs som brukes til køsystem senere. 
+
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{structOrder}{Order}} 
+\end{DoxyReturn}
+
+
+Definition at line 111 of file Order\+Module.\+c.
+
